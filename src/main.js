@@ -13,16 +13,18 @@ button.addEventListener('click', () => {
   console.log(inputText.value.length);
   
   if (isEmailValid && selectEntrada.value === 'email') {
-    p.innerHTML = 'Email válido';
+    p.innerHTML = `Email: ${inputText.value} é válido,
+    porém isso não representa que ele realmente exista.`;
     p.style.backgroundColor = 'green';
   } else if (!isEmailValid && selectEntrada.value === 'email') {
-    p.innerHTML = 'Email inválido';
+    p.innerHTML = `Email: ${inputText.value} é inválido`;
     p.style.backgroundColor = 'red';    
   } else if (inputText.value.length === 11 && selectEntrada.value === 'cpf') {
-    p.innerHTML = 'CPF válido';
+    p.innerHTML = `CPF: ${inputText.value} é válido,
+    porém isso não representa que ele realmente exista.`;
     p.style.backgroundColor = 'green';
   } else if (inputText.value.length !== 11 && selectEntrada.value === 'cpf') {
-    p.innerHTML = 'CPF inválido';
+    p.innerHTML = `CPF: ${inputText.value} é inválido`;
     p.style.backgroundColor = 'red';
   };
   inputText.value = '';

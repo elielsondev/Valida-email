@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valida email</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Validador de campos</h1>
+      <select id="entrada" name="entrada">
+        <option value="email">E-mail</option>
+        <option value="cpf" selected>CPF</option>
+      </select>
+      <input type="text" name="input-text" id="input-text">
+      <br />
+      <br />
+      <button id="btn">Validar</button>
+      <br />
+      <p id="retorno">Escolha a opção, insira um valor e clique em validar</p>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

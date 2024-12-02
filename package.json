@@ -6,12 +6,14 @@
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
+    "extends": "@trybe/eslint-config-frontend",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^6.0.1"
   },
   "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.11.4",
     "validator": "^13.12.0"
   }
 }
